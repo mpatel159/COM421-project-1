@@ -1,28 +1,10 @@
-/* styles.css */
-body {
-    background-color: white;
+.bold {
+	font-weight: bold;
 }
-
-
 strong {
 	font-size: 100%;
 	font-weight: bold;
 	
-}
-h2 {
-	color: black;
-	font-size: 150%;
-	font-weight: bold;
-	margin: 130px 0px 0px 0px;
-}
-h3 {
-    color: black;
-	font-size: 150%;
-	font-weight: bold;
-	margin: 50px 0px 0px 0px; 
-}
-.bold {
-	font-weight: bold;
 }
 aside {
 	width: 40%;

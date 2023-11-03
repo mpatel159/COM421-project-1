@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Data Page</title>
         <link rel="stylesheet" href="style.css">
       </head>
       <body>
-        <h1>How to organize and analyze research data</h1>
         <div class="sidebar">
+            <a href="../homepage.html">Home</a>
+            <a href="../placeholder/placeholderPage.html">Topic</a>
+            <a href="../research/researchPage.html">Research</a>
+            <a href="../data/dataPage.html">Data</a>
+            <a href="../placeholder/placeholderPage.html">References</a>
+            <a href="../placeholder/placeholderPage.html">Style</a>
+            <a href="../placeholder/placeholderPage.html">Layout</a>
+            <a href="../placeholder/placeholderPage.html">Modality</a>
+            <a href="../placeholder/placeholderPage.html">Professionalization</a>
+          </div>
+          <div class="content">
+        <h1>How to organize and analyze research data</h1>
+        <aside>
             For this lesson, you'll need the following:
-            <ui>
+            <ul>
                 <li>Microsoft Excel</li>
                 <li>PASW (formerly SPSS) statistics software, or free trial download</li>
-            </ui>
+            </ul>
             You should already be familiar with:
-            <ui>
+            <ul>
                 <li>The basic functions and tools of Excel</li>
                 <li><strong>Descriptive statistics</strong> and <strong>inferential statistics</strong></li>
                 <li>Research design and how to identify <strong>independent variables</strong> and <strong>dependent variables</strong></li>
-            </ui>
-            
-        </div>
+            </ul>
+        </aside>
+
         <div>
             <p>This short lesson is intended for graduate and advanced undergraduate students undertaking original research projects. After completing the 30-minute lesson, you will be able to to:</p>
-            <ui>
+            <ul>
                 <li>Format raw research data in an Excel spreadsheet for efficient analysis</li>
                 <li>Run basic descriptive statistics in Excel</li>
                 <li>Prepare the document for statistical analysis in the software package PASW</li>
-            </ui>
+            </ul>
     
 
         </div>
@@ -52,16 +64,16 @@
                 <li>Separate data into component values whenever possible by adding new columns. For example, tasks_completed values (Y/Y/N) can be broken up into three components. So, add columns task1, task2, and task3, and reformat values appropriately.</li>
                 <li>Double-check to ensure no data entry errors have been made, then delete the old tasks_completed column.</li>
                 <li>Your Raw_Dataset spreadsheet should now look like Figure 2.</li>
-               <figure>
+            </ol>
+            <figure>
                 <img src="../images/datalesson_fig2.png" alt="figure 2">
                 <figcaption>Values for each variable are entered in a consistent format.</figcaption>
                </figure>
-            </ol>
-            <div class="sidebar">
-                Dichotomous variables allow for the easy isolation of characteristics for analysis. For example, separating experience levels allows the researcher to test in PASW whether subjects with low experience have perceived ease of use scores significantly different from those with medium and high experience levels.
-              </div>
+               <aside>
+                    Dichotomous variables allow for the easy isolation of characteristics for analysis. For example, separating experience levels allows the researcher to test in PASW whether subjects with low experience have perceived ease of use scores significantly different from those with medium and high experience levels.
+               </aside>
+
               <p>Replace categorical data values with "0" or "1" (0=no, 1=yes) to indicate whether or not the value is represented for the given subject/item. This makes the categorical values <strong>dichotomous</strong>, which gives the researcher maximum flexibility in testing for relationships or correlations.</p>
-              <div class="afterSidebar">
                 <ol>
                     <li>Copy the Raw_Dataset values into the Sheet2 tab. Rename this sheet Formatted_Data.</li>
                     <li>In the Formatted_Data sheet, add new columns with Insert > Columns for each distinct value in categorical data columns (tutorial_types, gender, exp_level, task1, task2, and task3). You do not have to add a new column for task1, task2, and task3 because their values are already dichotomous.</li>
@@ -69,15 +81,14 @@
                     <li>Replace dichotomous data values with "0" or "1" (0=no, 1=yes) using the replace function: Edit > Replace.</li>
                     <li>Your Formatted_Data spreadsheet should now look like Figure 3.</li>
                   </ol>
-              </div>
               <figure>
                 <img src="../images/datalesson_fig3 (1).png" alt="figure 3"/>
                 <figcaption>Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</figcaption>
               </figure>
               <h3>Run descriptive statistics</h3>
-              <div class="sidebar">
-                Analyzing descriptive statistics may lead you to ask new questions. For example, perc_enjoy is much higher on average than perc_usefulness, which also has a large variance. This suggests that a segment of users may not have considered the system useful even though they enjoyed using it.
-              </div>
+              <aside>
+                    Analyzing descriptive statistics may lead you to ask new questions. For example, perc_enjoy is much higher on average than perc_usefulness, which also has a large variance. This suggests that a segment of users may not have considered the system useful even though they enjoyed using it.
+              </aside>
               <p>Run descriptive (summary) statistics on the dataset and output results in a new spreadsheet. If necessary, rearrange columns so that data requiring summary, those with continuous values, are adjacent. (In the spreadsheet, the continuous values of perc_enjoy, perc_usefulness, and perc_ease_of_use are already adjacent.)
                 Write down the "input range" (i.e. H2:J26) of the data requiring summary, making sure not to include variable labels.</p>
                 <ol>
@@ -108,13 +119,12 @@
                     <img src="../images/datalesson_fig5.png" alt="figure 5"/>
                     <figcaption>Don't assume PASW doesn't run a given test. Many are located under broader statistical classifications.</figcaption>
                 </figure>
-                <div class="sidebar">
-                    Consult UCLA's Choosing the Correct Statistic to ensure the statistical anlaysis is appropriate for your research question(s), variables of interest, and associated data types.
-                </div>
+                <aside>
+                        Consult UCLA's Choosing the Correct Statistic to ensure the statistical anlaysis is appropriate for your research question(s), variables of interest, and associated data types.
+                </aside>
+
                 <p>Use your prior knowledge or the <a href="http://www.ats.ucla.edu/stat/mult_pkg/whatstat/default.htm">Choosing the Correct Statistic resource</a> to determine which statistic to run to find whether there is a significant difference in perc_usefulness between free_play and other tutorial types.</p>
-                <div class="afterSidebar">
                     <p>You should have determined that the Kruskal-Wallis one-way analysis of variance is the appropriate test. Go to Analyze > Nonparametric Tests > K Independent Samples... A new window will open prompting you to select the variables (by column name) to be tested.</p>
-                </div>
                 <ol>
                     <li>Select the perc_usefulness variable from the scrollable list on the left, and click the top arrow to move it to the Test Variable List (i.e. dependent variable).</li>
                     <li>Select the free_play variable from the scrollable list, and click the bottom arrow to move it to the Grouping Variable section (i.e. independent variable).</li>
@@ -124,12 +134,13 @@
                     <img src="../images/datalesson_fig6.png" alt="figure 6"/>
                     <figcaption>For Kruskal-Wallis, an independent (free_play) and a dependent variable (perc_usefulness) are selected.</figcaption>
                 </figure>
-                <p>Click OK to display the statistical analysis results to new viewing window. Your results screen should look like Figure 7. Because statistical analysis output contains many numerical components (some of which must be cited in formal reports), it is a good idea to save it to a format independent of the PASW software. To save the results, go to <span class="bold">File > Export</span>. Change Document Type to the desired output format (Word, Excel, PDF, etc.), then click OK.</p>
+                <p>Click OK to display the statistical analysis results to new viewing window. Your results screen should look like Figure 7. Because statistical analysis output contains many numerical components (some of which must be cited in formal reports), it is a good idea to save it to a format independent of the PASW software. To save the results, go to <strong>File > Export</strong>. Change Document Type to the desired output format (Word, Excel, PDF, etc.), then click OK.</p>
                 <figure>
                     <img src="../images/datalesson_fig7.png" alt="figure 7"/>
                     <figcaption>PASW allows users to export statistics to common document types.</figcaption>
                 </figure>
                 <h3>Test your knowledge</h3>
                 <p>Now that you've finished the lesson, please complete a short quiz to test your understanding of formatting research datasets for comprehensive statistical analysis.</p>
-      </body>
+            </div>
+            </body>
 </html>

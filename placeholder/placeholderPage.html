@@ -1,10 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Placeholder Page</title>
+        <link rel="stylesheet" href="style.css">
       </head>
       <body>
-        Not yet implemented
+        <div class="sidebar">
+          <a href="../homepage.html">Home</a>
+          <a href="../placeholder/placeholderPage.html">Topic</a>
+          <a href="../research/researchPage.html">Research</a>
+          <a href="../data/dataPage.html">Data</a>
+          <a href="../placeholder/placeholderPage.html">References</a>
+          <a href="../placeholder/placeholderPage.html">Style</a>
+          <a href="../placeholder/placeholderPage.html">Layout</a>
+          <a href="../placeholder/placeholderPage.html">Modality</a>
+          <a href="../placeholder/placeholderPage.html">Professionalization</a>
+        </div>
+        <div class="content">
+          <h1>Use h1 Header for Document Title</h1>
+          <h2>Use h2 Headers for Section Heading</h2>
+          <p>Use the paragraph tags to seperate text into paragraphs</p>
+          <p>The styling of the pages is done in with 2 seperate css classes that can be found in the placeholderPage's "style.css". They are the "sidebar" and "content" classes. The "sidebar" class can be copied from this page as it is used to navigate throughout the modules. The "content" class is for the actual page</p>
+          <aside>
+            Sidebar
+            <p>You can use the "aside" element to create sidebars. Puting sidebar text in a paragraph block seperates it from the sidebar header.</p>
+          </aside>
+          <h3>Use h3 for any section seperation that needs to happen in parent section</h3>
+          <p>You can use both ordered lists and unordered lists depending on if you need to display steps or not. (see example bellow)</p>
+            <ol>
+              <li>First use the "ol" tag for ordered lists or the "ul" tag for unordered lists</li>
+              <li>Next use the "li" tags to display your list items</li>
+            </ol>
+            <ul>
+              <li>This is an example of an unordered list
+                <ul>
+                  <li>You can use nested "ul" tags to create nested bullet points</li>
+                </ul>
+              </li>
+            </ul>
+          <p>You can use the "figure" tag to create images with captions. Use the "figcaption" tag to add captions. Remember to add alt text to images. Use the image bellow as an example:</p>
+          <figure>
+            <img src="../images/pencil.gif" alt="pencil gif">
+            <figcaption>This is a picture of a pencil!</figcaption>
+          </figure>
+          <p>You can use the "strong" tag when you need to place emphasis on any part of the document. <strong>Like This</strong></p>
+        </div>
+
       </body>
 </html>
